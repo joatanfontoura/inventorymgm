@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_map">
+    <sys_transform_map action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copy_empty_fields>false</copy_empty_fields>
+        <create_new_record_on_empty_coalesce_fields>false</create_new_record_on_empty_coalesce_fields>
+        <enforce_mandatory_fields>No</enforce_mandatory_fields>
+        <name>TM 2 - Atualiza Desc de Itens</name>
+        <order>100</order>
+        <run_business_rules>true</run_business_rules>
+        <run_script>false</run_script>
+        <script><![CDATA[(function transformRow(source, target, map, log, isUpdate) {
+
+	// Add your code here
+
+})(source, target, map, log, action==="update");]]></script>
+        <source_table>x_738256_inventory_imp_products</source_table>
+        <sys_class_name>sys_transform_map</sys_class_name>
+        <sys_created_by>joatan</sys_created_by>
+        <sys_created_on>2024-03-26 17:14:02</sys_created_on>
+        <sys_id>e008f8bb47850210b5c0fe02d16d43df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TM 2 - Atualiza Desc de Itens</sys_name>
+        <sys_package display_value="Inventory Management" source="x_738256_inventory">74e3f3ab47010210b5c0fe02d16d4369</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Management">74e3f3ab47010210b5c0fe02d16d4369</sys_scope>
+        <sys_update_name>sys_transform_map_e008f8bb47850210b5c0fe02d16d43df</sys_update_name>
+        <sys_updated_by>joatan</sys_updated_by>
+        <sys_updated_on>2024-03-26 17:14:02</sys_updated_on>
+        <target_table>x_738256_inventory_product</target_table>
+    </sys_transform_map>
+</record_update>

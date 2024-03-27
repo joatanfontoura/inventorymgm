@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item">
+    <sp_rectangle_menu_item action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <color>default</color>
+        <condition/>
+        <display_1/>
+        <display_2/>
+        <display_date/>
+        <filter/>
+        <glyph>shopping-basket</glyph>
+        <hint/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <label>Inventory Mgm</label>
+        <order>100</order>
+        <record_script/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description/>
+        <sp_page display_value="inventory_management">e7d6657b47890210b5c0fe02d16d4312</sp_page>
+        <sp_rectangle_menu/>
+        <sp_rectangle_menu_item display_value="More">01ef85b65368301056c1ddeeff7b12ce</sp_rectangle_menu_item>
+        <sys_class_name>sp_rectangle_menu_item</sys_class_name>
+        <sys_created_by>joatan</sys_created_by>
+        <sys_created_on>2024-03-26 21:07:43</sys_created_on>
+        <sys_id>9ecd657747c90210b5c0fe02d16d430a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Inventory Mgm</sys_name>
+        <sys_package display_value="Inventory Management" source="x_738256_inventory">74e3f3ab47010210b5c0fe02d16d4369</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Management">74e3f3ab47010210b5c0fe02d16d4369</sys_scope>
+        <sys_update_name>sp_rectangle_menu_item_9ecd657747c90210b5c0fe02d16d430a</sys_update_name>
+        <sys_updated_by>joatan</sys_updated_by>
+        <sys_updated_on>2024-03-26 21:07:43</sys_updated_on>
+        <table/>
+        <type>page</type>
+        <url/>
+        <url_target/>
+    </sp_rectangle_menu_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=9ecd657747c90210b5c0fe02d16d430a"/>
+</record_update>

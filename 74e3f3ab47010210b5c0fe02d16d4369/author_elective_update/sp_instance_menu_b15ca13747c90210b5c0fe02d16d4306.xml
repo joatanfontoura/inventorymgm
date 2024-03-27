@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_menu">
+    <sp_instance_menu action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column/>
+        <sp_widget display_value="Header Menu">5ef595c1cb12020000f8d856634c9c6e</sp_widget>
+        <sys_class_name>sp_instance_menu</sys_class_name>
+        <sys_created_by>joatan</sys_created_by>
+        <sys_created_on>2024-03-26 21:01:24</sys_created_on>
+        <sys_id>b15ca13747c90210b5c0fe02d16d4306</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Inventory Mgm Menu</sys_name>
+        <sys_package display_value="Inventory Management" source="x_738256_inventory">74e3f3ab47010210b5c0fe02d16d4369</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Management">74e3f3ab47010210b5c0fe02d16d4369</sys_scope>
+        <sys_update_name>sp_instance_menu_b15ca13747c90210b5c0fe02d16d4306</sys_update_name>
+        <sys_updated_by>joatan</sys_updated_by>
+        <sys_updated_on>2024-03-26 21:01:24</sys_updated_on>
+        <title>Inventory Mgm Menu</title>
+        <url/>
+        <widget_parameters><![CDATA[	]]></widget_parameters>
+    </sp_instance_menu>
+    <sys_translated_text action="DELETE" query="documentkey=b15ca13747c90210b5c0fe02d16d4306"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Inventory Management">74e3f3ab47010210b5c0fe02d16d4369</application>
+        <file_path/>
+        <instance_id>26d31277db2e31d439639027c596192d</instance_id>
+        <instance_name>dev222494</instance_name>
+        <name>sp_instance_menu_b15ca13747c90210b5c0fe02d16d4306</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_menu"&gt;&lt;sp_instance_menu action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column/&gt;&lt;sp_widget display_value="Header Menu"&gt;5ef595c1cb12020000f8d856634c9c6e&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_menu&lt;/sys_class_name&gt;&lt;sys_created_by&gt;joatan&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-03-26 21:01:24&lt;/sys_created_on&gt;&lt;sys_id&gt;b15ca13747c90210b5c0fe02d16d4306&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Inventory Mgm Menu&lt;/sys_name&gt;&lt;sys_package display_value="Inventory Management" source="x_738256_inventory"&gt;74e3f3ab47010210b5c0fe02d16d4369&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Inventory Management"&gt;74e3f3ab47010210b5c0fe02d16d4369&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_menu_b15ca13747c90210b5c0fe02d16d4306&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;joatan&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-03-26 21:01:24&lt;/sys_updated_on&gt;&lt;title&gt;Inventory Mgm Menu&lt;/title&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[	]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_menu&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=b15ca13747c90210b5c0fe02d16d4306"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1042668122</payload_hash>
+        <record_name>Inventory Mgm Menu</record_name>
+        <reverted_from/>
+        <source>f4e3f3ab47010210b5c0fe02d16d436d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>joatan</sys_created_by>
+        <sys_created_on>2024-03-26 21:01:24</sys_created_on>
+        <sys_id>5b6c213747c90210b5c0fe02d16d43f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18e7c915bc00000001</sys_recorded_at>
+        <sys_updated_by>joatan</sys_updated_by>
+        <sys_updated_on>2024-03-26 21:01:24</sys_updated_on>
+        <type>Instance with Menu</type>
+        <update_guid>5f6c21378fc90210d5e40fcc40a8baf2</update_guid>
+        <update_guid_history>5f6c21378fc90210d5e40fcc40a8baf2:-1042668122</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Inventory Mgm Menu">73ad617747c90210b5c0fe02d16d43c8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>joatan</sys_created_by>
+        <sys_created_on>2024-03-26 21:06:54</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_menu">sp_instance_menu</sys_db_object>
+        <sys_id>b7ac1b4658b2448f87f2abc80567d7e1</sys_id>
+        <sys_metadata>b15ca13747c90210b5c0fe02d16d4306</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Inventory Mgm Menu</sys_name>
+        <sys_package display_value="Inventory Management" source="x_738256_inventory">74e3f3ab47010210b5c0fe02d16d4369</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Management">74e3f3ab47010210b5c0fe02d16d4369</sys_scope>
+        <sys_scope_delete display_value="">13844124c45d4c9ca3cb6274166b7444</sys_scope_delete>
+        <sys_update_name>sp_instance_menu_b15ca13747c90210b5c0fe02d16d4306</sys_update_name>
+        <sys_update_version display_value="sp_instance_menu_b15ca13747c90210b5c0fe02d16d4306">5b6c213747c90210b5c0fe02d16d43f3</sys_update_version>
+        <sys_updated_by>joatan</sys_updated_by>
+        <sys_updated_on>2024-03-26 21:06:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

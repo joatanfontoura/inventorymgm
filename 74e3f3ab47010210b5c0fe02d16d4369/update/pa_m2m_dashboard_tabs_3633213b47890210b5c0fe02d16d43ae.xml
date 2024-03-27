@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_m2m_dashboard_tabs">
+    <pa_m2m_dashboard_tabs action="INSERT_OR_UPDATE">
+        <dashboard display_value="Inventory Management">1423adf747890210b5c0fe02d16d4321</dashboard>
+        <home>false</home>
+        <homepage/>
+        <order>1</order>
+        <sys_class_name>pa_m2m_dashboard_tabs</sys_class_name>
+        <sys_created_by>joatan</sys_created_by>
+        <sys_created_on>2024-03-26 20:21:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3633213b47890210b5c0fe02d16d43ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1423adf747890210b5c0fe02d16d4321</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Inventory Management" source="x_738256_inventory">74e3f3ab47010210b5c0fe02d16d4369</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Management">74e3f3ab47010210b5c0fe02d16d4369</sys_scope>
+        <sys_update_name>pa_m2m_dashboard_tabs_3633213b47890210b5c0fe02d16d43ae</sys_update_name>
+        <sys_updated_by>joatan</sys_updated_by>
+        <sys_updated_on>2024-03-26 20:21:14</sys_updated_on>
+        <tab display_value="New Tab 1">f233213b47890210b5c0fe02d16d43a5</tab>
+    </pa_m2m_dashboard_tabs>
+</record_update>

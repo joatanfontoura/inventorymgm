@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_report">
+    <sysauto_report action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <address_list/>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <group_list name="Supervisores">ed6b8c7747c10210b5c0fe02d16d4333</group_list>
+        <include_detail>false</include_detail>
+        <include_with/>
+        <max_drift/>
+        <name>Scheduled execution of Requisições de Produto (por situação)</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <omit_if_no_records>false</omit_if_no_records>
+        <output_type>PDF-landscape</output_type>
+        <page_height_in_pixels>612</page_height_in_pixels>
+        <page_size>Letter</page_size>
+        <page_width_in_pixels>792</page_width_in_pixels>
+        <report display_value="Requisições de Produto (por situação)">6e5f9db347890210b5c0fe02d16d4366</report>
+        <report_body><![CDATA[<p>Ol&aacute;!</p>
+<p>Segue o relat&oacute;rio em anexo!</p>
+<p>P.S.: N&atilde;o responder esta mensagem, pois trata-se de um disparo automatizado.</p>]]></report_body>
+        <report_title>Relatório de Requisições de Produto: Por Situação</report_title>
+        <run_as display_value="Joatan Fontoura">8791a0a147450210b5c0fe02d16d4311</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2024-03-26 20:08:02</run_start>
+        <run_time>1970-01-01 15:00:00</run_time>
+        <run_type>weekly</run_type>
+        <sys_class_name>sysauto_report</sys_class_name>
+        <sys_created_by>joatan</sys_created_by>
+        <sys_created_on>2024-03-26 20:15:35</sys_created_on>
+        <sys_id>e930e13747890210b5c0fe02d16d43de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Scheduled execution of Requisições de Produto (por situação)</sys_name>
+        <sys_package display_value="Inventory Management" source="x_738256_inventory">74e3f3ab47010210b5c0fe02d16d4369</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Management">74e3f3ab47010210b5c0fe02d16d4369</sys_scope>
+        <sys_update_name>sysauto_report_e930e13747890210b5c0fe02d16d43de</sys_update_name>
+        <sys_updated_by>joatan</sys_updated_by>
+        <sys_updated_on>2024-03-26 20:15:35</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+        <user_list/>
+        <zip>false</zip>
+    </sysauto_report>
+</record_update>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>joatan</sys_created_by>
+        <sys_created_on>2024-03-26 12:42:08</sys_created_on>
+        <sys_id>312a77ef47410210b5c0fe02d16d43ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_738256_inventory_product.x_738256_inventory.product_user</sys_name>
+        <sys_package display_value="Inventory Management" source="x_738256_inventory">74e3f3ab47010210b5c0fe02d16d4369</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Management">74e3f3ab47010210b5c0fe02d16d4369</sys_scope>
+        <sys_security_acl display_value="x_738256_inventory_product">fd2a77ef47410210b5c0fe02d16d43e7</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_312a77ef47410210b5c0fe02d16d43ec</sys_update_name>
+        <sys_updated_by>joatan</sys_updated_by>
+        <sys_updated_on>2024-03-26 12:42:08</sys_updated_on>
+        <sys_user_role display_value="x_738256_inventory.product_user" name="x_738256_inventory.product_user">992af3ab47010210b5c0fe02d16d43a0</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Inventory Management">74e3f3ab47010210b5c0fe02d16d4369</application>
+        <file_path/>
+        <instance_id>26d31277db2e31d439639027c596192d</instance_id>
+        <instance_name>dev222494</instance_name>
+        <name>sys_security_acl_role_312a77ef47410210b5c0fe02d16d43ec</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>joatan</sys_created_by><sys_created_on>2024-03-26 12:42:08</sys_created_on><sys_id>312a77ef47410210b5c0fe02d16d43ec</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_738256_inventory_product.x_738256_inventory.product_user</sys_name><sys_package display_value="Inventory Management" source="x_738256_inventory">74e3f3ab47010210b5c0fe02d16d4369</sys_package><sys_policy/><sys_scope display_value="Inventory Management">74e3f3ab47010210b5c0fe02d16d4369</sys_scope><sys_security_acl display_value="x_738256_inventory_product">fd2a77ef47410210b5c0fe02d16d43e7</sys_security_acl><sys_update_name>sys_security_acl_role_312a77ef47410210b5c0fe02d16d43ec</sys_update_name><sys_updated_by>joatan</sys_updated_by><sys_updated_on>2024-03-26 12:42:08</sys_updated_on><sys_user_role display_value="x_738256_inventory.product_user" name="x_738256_inventory.product_user">992af3ab47010210b5c0fe02d16d43a0</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-700757862</payload_hash>
+        <record_name>x_738256_inventory_product.x_738256_inventory.product_user</record_name>
+        <reverted_from/>
+        <source>f4e3f3ab47010210b5c0fe02d16d436d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>joatan</sys_created_by>
+        <sys_created_on>2024-03-26 12:42:08</sys_created_on>
+        <sys_id>712a77ef47410210b5c0fe02d16d43f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18e7ac844530000001</sys_recorded_at>
+        <sys_updated_by>joatan</sys_updated_by>
+        <sys_updated_on>2024-03-26 12:42:08</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>352a77ef5a41021041fe8e47f83ce7ef</update_guid>
+        <update_guid_history>352a77ef5a41021041fe8e47f83ce7ef:-700757862</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_738256_inventory_product.x_738256_inventory.product_user">f75a90bb47050210b5c0fe02d16d432e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>joatan</sys_created_by>
+        <sys_created_on>2024-03-26 15:02:54</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>2e5b2d1e218d40188e55b74524359031</sys_id>
+        <sys_metadata>312a77ef47410210b5c0fe02d16d43ec</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_738256_inventory_product.x_738256_inventory.product_user</sys_name>
+        <sys_package display_value="Inventory Management" source="x_738256_inventory">74e3f3ab47010210b5c0fe02d16d4369</sys_package>
+        <sys_parent display_value="x_738256_inventory_product">fd2a77ef47410210b5c0fe02d16d43e7</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Management">74e3f3ab47010210b5c0fe02d16d4369</sys_scope>
+        <sys_scope_delete display_value="">13844124c45d4c9ca3cb6274166b7444</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_312a77ef47410210b5c0fe02d16d43ec</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_312a77ef47410210b5c0fe02d16d43ec">712a77ef47410210b5c0fe02d16d43f0</sys_update_version>
+        <sys_updated_by>joatan</sys_updated_by>
+        <sys_updated_on>2024-03-26 15:02:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
