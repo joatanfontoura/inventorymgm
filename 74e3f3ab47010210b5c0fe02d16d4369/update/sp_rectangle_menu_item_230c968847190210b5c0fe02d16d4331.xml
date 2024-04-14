@@ -7,36 +7,36 @@
         <display_2/>
         <display_date/>
         <filter/>
-        <glyph>empty</glyph>
+        <glyph/>
         <hint/>
         <kb_article/>
         <kb_category/>
         <kb_topic/>
-        <label>Product List</label>
+        <label>New Product Request</label>
         <order>100</order>
         <record_script/>
-        <sc_cat_item/>
+        <sc_cat_item display_value="Product Request">2dc1924047190210b5c0fe02d16d4364</sc_cat_item>
         <sc_category/>
         <short_description/>
-        <sp_page display_value="inventory_management">e7d6657b47890210b5c0fe02d16d4312</sp_page>
+        <sp_page display_value="sc_cat_item">9f12251147132100ba13a5554ee490f4</sp_page>
         <sp_rectangle_menu/>
         <sp_rectangle_menu_item display_value="More">01ef85b65368301056c1ddeeff7b12ce</sp_rectangle_menu_item>
         <sys_class_name>sp_rectangle_menu_item</sys_class_name>
         <sys_created_by>joatan</sys_created_by>
-        <sys_created_on>2024-03-26 21:07:43</sys_created_on>
-        <sys_id>9ecd657747c90210b5c0fe02d16d430a</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>Product List</sys_name>
+        <sys_created_on>2024-03-27 19:09:47</sys_created_on>
+        <sys_id>230c968847190210b5c0fe02d16d4331</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>New Product Request</sys_name>
         <sys_package display_value="Inventory Management" source="x_738256_inventory">74e3f3ab47010210b5c0fe02d16d4369</sys_package>
         <sys_policy/>
         <sys_scope display_value="Inventory Management">74e3f3ab47010210b5c0fe02d16d4369</sys_scope>
-        <sys_update_name>sp_rectangle_menu_item_9ecd657747c90210b5c0fe02d16d430a</sys_update_name>
+        <sys_update_name>sp_rectangle_menu_item_230c968847190210b5c0fe02d16d4331</sys_update_name>
         <sys_updated_by>joatan</sys_updated_by>
-        <sys_updated_on>2024-03-27 19:35:27</sys_updated_on>
+        <sys_updated_on>2024-03-27 19:21:33</sys_updated_on>
         <table/>
-        <type>page</type>
+        <type>sc_cat_item</type>
         <url/>
         <url_target/>
     </sp_rectangle_menu_item>
-    <sys_translated_text action="delete_multiple" query="documentkey=9ecd657747c90210b5c0fe02d16d430a"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=230c968847190210b5c0fe02d16d4331"/>
 </record_update>
