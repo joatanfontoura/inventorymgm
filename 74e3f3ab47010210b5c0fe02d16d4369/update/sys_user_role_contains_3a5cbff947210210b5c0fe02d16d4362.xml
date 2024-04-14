@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains display_value="canvas_user" name="canvas_user">8536f54bc713330072b211d4d8c26080</contains>
+        <role display_value="x_738256_inventory.perfil_supervisor" name="x_738256_inventory.perfil_supervisor">638980bf47810210b5c0fe02d16d43a4</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>joatan</sys_created_by>
+        <sys_created_on>2024-04-14 22:53:47</sys_created_on>
+        <sys_id>3a5cbff947210210b5c0fe02d16d4362</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>canvas_user.x_738256_inventory.perfil_supervisor</sys_name>
+        <sys_package display_value="Inventory Management" source="x_738256_inventory">74e3f3ab47010210b5c0fe02d16d4369</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Management">74e3f3ab47010210b5c0fe02d16d4369</sys_scope>
+        <sys_update_name>sys_user_role_contains_3a5cbff947210210b5c0fe02d16d4362</sys_update_name>
+        <sys_updated_by>joatan</sys_updated_by>
+        <sys_updated_on>2024-04-14 22:53:47</sys_updated_on>
+    </sys_user_role_contains>
+</record_update>

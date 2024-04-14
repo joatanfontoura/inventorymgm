@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_search_source_m2m">
+    <ais_search_profile_ais_search_source_m2m action="INSERT_OR_UPDATE">
+        <profile display_value="inventory-management-ws Search Profile">655c3ff92f2102101fa827fcd8095899</profile>
+        <search_source display_value="Product">135cfff947210210b5c0fe02d16d43fe</search_source>
+        <sys_class_name>ais_search_profile_ais_search_source_m2m</sys_class_name>
+        <sys_created_by>joatan</sys_created_by>
+        <sys_created_on>2024-04-14 22:53:49</sys_created_on>
+        <sys_id>175c333d47210210b5c0fe02d16d4300</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>inventory-management-ws Search Profile.Product</sys_name>
+        <sys_package display_value="Inventory Management" source="x_738256_inventory">74e3f3ab47010210b5c0fe02d16d4369</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Management">74e3f3ab47010210b5c0fe02d16d4369</sys_scope>
+        <sys_update_name>ais_search_profile_ais_search_source_m2m_175c333d47210210b5c0fe02d16d4300</sys_update_name>
+        <sys_updated_by>joatan</sys_updated_by>
+        <sys_updated_on>2024-04-14 22:53:49</sys_updated_on>
+    </ais_search_profile_ais_search_source_m2m>
+</record_update>

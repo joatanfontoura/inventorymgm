@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="2eb97faf47410210b5c0fe02d16d4306" label="Product" max_length="40" name="x_738256_inventory_product" type="collection">
+    <element db_object_id="2eb97faf47410210b5c0fe02d16d4306" label="Product" max_length="40" name="x_738256_inventory_product" text_index="true" type="collection">
         <element label="Description" max_length="500" name="description" type="string"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Picture" max_length="40" name="picture" type="user_image"/>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <name>listConfigId</name>
+        <page display_value="Inventory Management | WS">ed5c3ff998210210cb067da696f8d098</page>
+        <required_translations>[]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>joatan</sys_created_by>
+        <sys_created_on>2024-04-14 22:53:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>ad5c3ff999210210e43b26e38bad1487</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>listConfigId</sys_name>
+        <sys_package display_value="Inventory Management" source="x_738256_inventory">74e3f3ab47010210b5c0fe02d16d4369</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Management">74e3f3ab47010210b5c0fe02d16d4369</sys_scope>
+        <sys_update_name>sys_ux_page_property_ad5c3ff999210210e43b26e38bad1487</sys_update_name>
+        <sys_updated_by>joatan</sys_updated_by>
+        <sys_updated_on>2024-04-14 22:53:47</sys_updated_on>
+        <type>string</type>
+        <unique_name>x_738256_inventory.ed5c3ff998210210cb067da696f8d098.root.listConfigId</unique_name>
+        <value>a25c7ff947210210b5c0fe02d16d43bc</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=ad5c3ff999210210e43b26e38bad1487"/>
+</record_update>

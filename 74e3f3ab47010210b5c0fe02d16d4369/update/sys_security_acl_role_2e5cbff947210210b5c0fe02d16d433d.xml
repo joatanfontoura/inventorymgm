@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>joatan</sys_created_by>
+        <sys_created_on>2024-04-14 22:53:47</sys_created_on>
+        <sys_id>2e5cbff947210210b5c0fe02d16d433d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x.738256.inventory-management-ws.*.x_738256_inventory.perfil_supervisor</sys_name>
+        <sys_package display_value="Inventory Management" source="x_738256_inventory">74e3f3ab47010210b5c0fe02d16d4369</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Management">74e3f3ab47010210b5c0fe02d16d4369</sys_scope>
+        <sys_security_acl display_value="x.738256.inventory-management-ws.*">ed5c3ff96b2102109376b46afbcb3e8f</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_2e5cbff947210210b5c0fe02d16d433d</sys_update_name>
+        <sys_updated_by>joatan</sys_updated_by>
+        <sys_updated_on>2024-04-14 22:53:47</sys_updated_on>
+        <sys_user_role display_value="x_738256_inventory.perfil_supervisor" name="x_738256_inventory.perfil_supervisor">638980bf47810210b5c0fe02d16d43a4</sys_user_role>
+    </sys_security_acl_role>
+</record_update>
