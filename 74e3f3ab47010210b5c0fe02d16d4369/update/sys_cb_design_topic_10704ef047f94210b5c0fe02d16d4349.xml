@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="_PRVW__10704ef069f942101e9da0f91f669245">d0704ef047f94210b5c0fe02d16d4346</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"ca9e5357fb5345749e4c316920d53d56","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"ca9e5357fb5345749e4c316920d53d56"}],"goals":[{"name":"primary","trigger_id":"ca9e5357fb5345749e4c316920d53d56","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":""},"id":"3aa9488aa9d1469b9b15530a11866da1","name":"Start","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"173618242818487fa5f1a32cb0e7f469","name":"End","expert_mode":false},{"type":"InputPrompt","variable_id":"167f360eff1f44eca5846fbab4d43405","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Please, in a few words, say me what do you need.\", vaContext.getRequesterLang())"},"acknowledgement":{"type":"String","mode":"string","value":"gs.getMessageLang(\"OK, got it!\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"request_feedback":true,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"id":"40281ede93614616b77634f77659a332","name":"Short Description","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"formatType":"Text","validationScript":"","description":""},{"type":"ReferenceChoiceInputPrompt","mode":"glide_record","id":"86a08cf2d37a4e25966d7a4ad151d97f","name":"Product","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"variable_id":"f103904db91f4718956650126be2bf45","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"In the list bellow, select your product.\", vaContext.getRequesterLang())"},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"expression_mode":"simple","metadataScript":"","cardName":"","cardFields":[],"no_options_found_message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:d3cef17047f94210b5c0fe02d16d43fc:node:86a08cf2d37a4e25966d7a4ad151d97f:field:NoOptionsFoundMessage\", vaContext.getRequesterLang())"},"condition":{"type":"Condition","mode":"glide_query","value":"quantity&gt;0"},"description":""},{"type":"CRUDAction","mode":"create","query":"short_description={{vaInputs.short_description}}^product={{vaInputs.product}}","variable_id":"97dd592540854fe3855f4328f6d75998","id":"d4864de583254838960b08f1e10079af","name":"Create Product Request","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"attachments":[{"type":"String","mode":"string","value":""}]},{"type":"RecordOutputPrompt","mode":"variable","table":"x_738256_inventory_product_request","variable_id":"97dd592540854fe3855f4328f6d75998","fields":["short_description","product"],"request_feedback":true,"id":"275fc243d15f4a838b6a1a9e08680e52","name":"Product Request created","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"condition":{"type":"Condition","mode":"glide_query","value":""}}],"edges":[{"type":"Edge","source_node_id":"3aa9488aa9d1469b9b15530a11866da1","target_node_id":"40281ede93614616b77634f77659a332","id":"12aa4815428d45a99d482031cc92700e"},{"type":"Edge","source_node_id":"40281ede93614616b77634f77659a332","target_node_id":"86a08cf2d37a4e25966d7a4ad151d97f","id":"43719cf097ad4e21b1d50cd4f9757560"},{"type":"Edge","source_node_id":"86a08cf2d37a4e25966d7a4ad151d97f","target_node_id":"d4864de583254838960b08f1e10079af","id":"b518bc7575d9478dbe00b16ddb8280f7"},{"type":"Edge","source_node_id":"d4864de583254838960b08f1e10079af","target_node_id":"275fc243d15f4a838b6a1a9e08680e52","id":"8ad02953248242e695476b5f1e90ae00"},{"type":"Edge","source_node_id":"275fc243d15f4a838b6a1a9e08680e52","target_node_id":"173618242818487fa5f1a32cb0e7f469","id":"921793b91c4846d2871814b4dea07c05"}],"id":"primary"}],"script_variables":[],"glide_variables":[{"type":"Reference","table":"sys_user","id":"current-user","name":"user","formatType":"text","secure":false,"sensitive":false,"list":false},{"type":"String","name":"short_description","list":false,"id":"167f360eff1f44eca5846fbab4d43405","formatType":"Text","validationScript":"","secure":false,"sensitive":false},{"type":"Reference","table":"x_738256_inventory_product","reference_qualifier_condition":"quantity&gt;0","id":"f103904db91f4718956650126be2bf45","name":"product","formatType":"text","secure":false,"sensitive":false,"list":false},{"type":"Reference","table":"x_738256_inventory_product_request","id":"97dd592540854fe3855f4328f6d75998","name":"create_product_request","formatType":"text","secure":false,"sensitive":false,"list":false}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"74e3f3ab47010210b5c0fe02d16d4369","domain":"global","topic_type":"STANDARD","channels":[],"dialog_acts_enabled":false,"id":"d3cef17047f94210b5c0fe02d16d43fc","name":"_PRVW__10704ef069f942101e9da0f91f669245","key_phrases":["New Product Request"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"autopilot_topic":false,"design_categories":[],"triggerable_by_notification":false,"description":"Ask VA to open a new product request","model_type":"nlu_keyword","foundational":false,"modify_confirmation_enabled":false,"context_profiles":[],"library":false,"readOnly":false,"nluMapping":"[]"}</design_definition>
+        <design_topic_id>d3cef17047f94210b5c0fe02d16d43fc</design_topic_id>
+        <graph>{
+  "graph_api_version": "1.0.61",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "3aa9488aa9d1469b9b15530a11866da1": {
+          "id": "3aa9488aa9d1469b9b15530a11866da1",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "173618242818487fa5f1a32cb0e7f469": {
+          "id": "173618242818487fa5f1a32cb0e7f469",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "40281ede93614616b77634f77659a332": {
+          "id": "40281ede93614616b77634f77659a332",
+          "stepType": "TextPrompt",
+          "name": "Short Description",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Please, in a few words, say me what do you need."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "OK, got it!"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "167f360eff1f44eca5846fbab4d43405",
+          "detailDescription": "",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          },
+          "requestFeedback": true
+        },
+        "86a08cf2d37a4e25966d7a4ad151d97f": {
+          "name": "Product",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "In the list bellow, select your product."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "f103904db91f4718956650126be2bf45",
+          "detailDescription": "",
+          "id": "86a08cf2d37a4e25966d7a4ad151d97f",
+          "stepType": "ReferenceChoicePrompt",
+          "mode": "glide_record",
+          "script": "",
+          "metadataScript": "",
+          "cardData": {},
+          "isMultipleSelect": false,
+          "noRecordsResponseMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Sorry, we don't have it."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "condition": {
+            "mode": "glide_query",
+            "value": "quantity&gt;0"
+          },
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "d4864de583254838960b08f1e10079af": {
+          "id": "d4864de583254838960b08f1e10079af",
+          "stepType": "CrudAction",
+          "name": "Create Product Request",
+          "template": {
+            "query": {
+              "terms": [
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "short_description",
+                  "expression": "{{vaInputs.short_description}}",
+                  "deserializedExpression": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": ""
+                        },
+                        {
+                          "type": "datapill",
+                          "dataPill": {
+                            "value": "{{vaInputs.short_description}}",
+                            "displayValue": "Input Variables➛Short Description"
+                          },
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        },
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "product",
+                  "expression": "{{vaInputs.product}}"
+                }
+              ]
+            },
+            "queryString": "short_description={{vaInputs.short_description}}^product={{vaInputs.product}}"
+          },
+          "mode": "create",
+          "record": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "attachments": [
+            {
+              "value": "",
+              "mode": "simple"
+            }
+          ],
+          "variableId": "97dd592540854fe3855f4328f6d75998"
+        },
+        "275fc243d15f4a838b6a1a9e08680e52": {
+          "id": "275fc243d15f4a838b6a1a9e08680e52",
+          "stepType": "RecordOutput",
+          "name": "Product Request created",
+          "variableId": "97dd592540854fe3855f4328f6d75998",
+          "cardTemplate": "General",
+          "cardFields": {},
+          "mode": "variable",
+          "tableName": "x_738256_inventory_product_request",
+          "fields": [
+            "short_description",
+            "product"
+          ],
+          "cardDefinition": {
+            "name": "Record",
+            "value": "General"
+          },
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "condition": {
+            "mode": "glide_query",
+            "value": ""
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "12aa4815428d45a99d482031cc92700e",
+          "edgeType": "Edge",
+          "source": "3aa9488aa9d1469b9b15530a11866da1",
+          "target": "40281ede93614616b77634f77659a332",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "43719cf097ad4e21b1d50cd4f9757560",
+          "edgeType": "Edge",
+          "source": "40281ede93614616b77634f77659a332",
+          "target": "86a08cf2d37a4e25966d7a4ad151d97f",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "b518bc7575d9478dbe00b16ddb8280f7",
+          "edgeType": "Edge",
+          "source": "86a08cf2d37a4e25966d7a4ad151d97f",
+          "target": "d4864de583254838960b08f1e10079af",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "8ad02953248242e695476b5f1e90ae00",
+          "edgeType": "Edge",
+          "source": "d4864de583254838960b08f1e10079af",
+          "target": "275fc243d15f4a838b6a1a9e08680e52",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "921793b91c4846d2871814b4dea07c05",
+          "edgeType": "Edge",
+          "source": "275fc243d15f4a838b6a1a9e08680e52",
+          "target": "173618242818487fa5f1a32cb0e7f469",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "167f360eff1f44eca5846fbab4d43405": {
+      "id": "167f360eff1f44eca5846fbab4d43405",
+      "name": "short_description",
+      "label": "Short Description",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTcxMzkwNzYyNzg2OCBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      },
+      "nodeId": "40281ede93614616b77634f77659a332",
+      "isHidden": false
+    },
+    "f103904db91f4718956650126be2bf45": {
+      "id": "f103904db91f4718956650126be2bf45",
+      "name": "product",
+      "label": "Product",
+      "varType": "reference",
+      "table": "x_738256_inventory_product",
+      "category": "vaInputs",
+      "nodeId": "86a08cf2d37a4e25966d7a4ad151d97f",
+      "isHidden": false
+    },
+    "97dd592540854fe3855f4328f6d75998": {
+      "id": "97dd592540854fe3855f4328f6d75998",
+      "name": "create_product_request",
+      "label": "Create Product Request",
+      "varType": "reference",
+      "table": "x_738256_inventory_product_request",
+      "inactive": false,
+      "category": "vaInputs",
+      "nodeId": "275fc243d15f4a838b6a1a9e08680e52",
+      "isHidden": false
+    }
+  }
+}</graph>
+        <name>_PRVW__10704ef069f942101e9da0f91f669245</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>joatan</sys_created_by>
+        <sys_created_on>2024-04-23 21:34:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>10704ef047f94210b5c0fe02d16d4349</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="Inventory Management" source="x_738256_inventory">74e3f3ab47010210b5c0fe02d16d4369</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Management">74e3f3ab47010210b5c0fe02d16d4369</sys_scope>
+        <sys_update_name>sys_cb_design_topic_10704ef047f94210b5c0fe02d16d4349</sys_update_name>
+        <sys_updated_by>joatan</sys_updated_by>
+        <sys_updated_on>2024-04-23 21:34:11</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>

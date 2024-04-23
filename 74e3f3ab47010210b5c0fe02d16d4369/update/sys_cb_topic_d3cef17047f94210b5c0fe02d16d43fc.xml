@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <autopilot_topic>false</autopilot_topic>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <context_profiles/>
+        <description>Ask VA to open a new product request</description>
+        <dialog_acts_enabled>false</dialog_acts_enabled>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <foundational>false</foundational>
+        <graph>{
+  "graph_api_version": "1.0.61",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "3aa9488aa9d1469b9b15530a11866da1": {
+          "id": "3aa9488aa9d1469b9b15530a11866da1",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "173618242818487fa5f1a32cb0e7f469": {
+          "id": "173618242818487fa5f1a32cb0e7f469",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "40281ede93614616b77634f77659a332": {
+          "id": "40281ede93614616b77634f77659a332",
+          "stepType": "TextPrompt",
+          "name": "Short Description",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Please, in a few words, say me what happened."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "OK, got it!"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "167f360eff1f44eca5846fbab4d43405",
+          "detailDescription": "",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          },
+          "requestFeedback": true
+        },
+        "86a08cf2d37a4e25966d7a4ad151d97f": {
+          "name": "Product",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "In the list bellow, select your product."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "f103904db91f4718956650126be2bf45",
+          "detailDescription": "",
+          "id": "86a08cf2d37a4e25966d7a4ad151d97f",
+          "stepType": "ReferenceChoicePrompt",
+          "mode": "glide_record",
+          "script": "",
+          "metadataScript": "",
+          "cardData": {},
+          "isMultipleSelect": false,
+          "noRecordsResponseMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Sorry, we don't have it."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "condition": {
+            "mode": "glide_query",
+            "value": "quantity&gt;0"
+          },
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "d4864de583254838960b08f1e10079af": {
+          "id": "d4864de583254838960b08f1e10079af",
+          "stepType": "CrudAction",
+          "name": "Create Product Request",
+          "template": {
+            "query": {
+              "terms": [
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "short_description",
+                  "expression": "{{vaInputs.short_description}}",
+                  "deserializedExpression": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": ""
+                        },
+                        {
+                          "type": "datapill",
+                          "dataPill": {
+                            "value": "{{vaInputs.short_description}}",
+                            "displayValue": "Input Variables➛Short Description"
+                          },
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        },
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "product",
+                  "expression": "{{vaInputs.product}}"
+                }
+              ]
+            },
+            "queryString": "short_description={{vaInputs.short_description}}^product={{vaInputs.product}}"
+          },
+          "mode": "create",
+          "record": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "attachments": [
+            {
+              "value": "",
+              "mode": "simple"
+            }
+          ],
+          "variableId": "97dd592540854fe3855f4328f6d75998"
+        },
+        "275fc243d15f4a838b6a1a9e08680e52": {
+          "id": "275fc243d15f4a838b6a1a9e08680e52",
+          "stepType": "RecordOutput",
+          "name": "Product Request created",
+          "variableId": "97dd592540854fe3855f4328f6d75998",
+          "cardTemplate": "General",
+          "cardFields": {},
+          "mode": "variable",
+          "tableName": "x_738256_inventory_product_request",
+          "fields": [
+            "short_description",
+            "product"
+          ],
+          "cardDefinition": {
+            "name": "Record",
+            "value": "General"
+          },
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "condition": {
+            "mode": "glide_query",
+            "value": ""
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "12aa4815428d45a99d482031cc92700e",
+          "edgeType": "Edge",
+          "source": "3aa9488aa9d1469b9b15530a11866da1",
+          "target": "40281ede93614616b77634f77659a332",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "43719cf097ad4e21b1d50cd4f9757560",
+          "edgeType": "Edge",
+          "source": "40281ede93614616b77634f77659a332",
+          "target": "86a08cf2d37a4e25966d7a4ad151d97f",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "b518bc7575d9478dbe00b16ddb8280f7",
+          "edgeType": "Edge",
+          "source": "86a08cf2d37a4e25966d7a4ad151d97f",
+          "target": "d4864de583254838960b08f1e10079af",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "8ad02953248242e695476b5f1e90ae00",
+          "edgeType": "Edge",
+          "source": "d4864de583254838960b08f1e10079af",
+          "target": "275fc243d15f4a838b6a1a9e08680e52",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "921793b91c4846d2871814b4dea07c05",
+          "edgeType": "Edge",
+          "source": "275fc243d15f4a838b6a1a9e08680e52",
+          "target": "173618242818487fa5f1a32cb0e7f469",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "167f360eff1f44eca5846fbab4d43405": {
+      "id": "167f360eff1f44eca5846fbab4d43405",
+      "name": "short_description",
+      "label": "Short Description",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTcxMzkwNzYyNzg2OCBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      },
+      "nodeId": "40281ede93614616b77634f77659a332",
+      "isHidden": false
+    },
+    "f103904db91f4718956650126be2bf45": {
+      "id": "f103904db91f4718956650126be2bf45",
+      "name": "product",
+      "label": "Product",
+      "varType": "reference",
+      "table": "x_738256_inventory_product",
+      "category": "vaInputs",
+      "nodeId": "86a08cf2d37a4e25966d7a4ad151d97f",
+      "isHidden": false
+    },
+    "97dd592540854fe3855f4328f6d75998": {
+      "id": "97dd592540854fe3855f4328f6d75998",
+      "name": "create_product_request",
+      "label": "Create Product Request",
+      "varType": "reference",
+      "table": "x_738256_inventory_product_request",
+      "inactive": false,
+      "category": "vaInputs",
+      "nodeId": "275fc243d15f4a838b6a1a9e08680e52",
+      "isHidden": false
+    }
+  }
+}</graph>
+        <key_phrases>New Product Request</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <model_type>nlu_keyword</model_type>
+        <modify_confirmation_enabled>false</modify_confirmation_enabled>
+        <name>New Product Request</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles/>
+        <root_topic_id/>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>joatan</sys_created_by>
+        <sys_created_on>2024-04-23 21:27:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>d3cef17047f94210b5c0fe02d16d43fc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>New Product Request</sys_name>
+        <sys_package display_value="Inventory Management" source="x_738256_inventory">74e3f3ab47010210b5c0fe02d16d4369</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Management">74e3f3ab47010210b5c0fe02d16d4369</sys_scope>
+        <sys_update_name>sys_cb_topic_d3cef17047f94210b5c0fe02d16d43fc</sys_update_name>
+        <sys_updated_by>joatan</sys_updated_by>
+        <sys_updated_on>2024-04-23 21:41:31</sys_updated_on>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+    </sys_cb_topic>
+    <sys_translated_text action="delete_multiple" query="documentkey=d3cef17047f94210b5c0fe02d16d43fc"/>
+</record_update>
