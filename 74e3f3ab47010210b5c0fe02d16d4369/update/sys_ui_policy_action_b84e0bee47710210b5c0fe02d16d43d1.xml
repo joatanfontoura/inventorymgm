@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>state</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>joatan</sys_created_by>
+        <sys_created_on>2024-04-29 13:43:55</sys_created_on>
+        <sys_id>b84e0bee47710210b5c0fe02d16d43d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>state</sys_name>
+        <sys_package display_value="Inventory Management" source="x_738256_inventory">74e3f3ab47010210b5c0fe02d16d4369</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Inventory Management">74e3f3ab47010210b5c0fe02d16d4369</sys_scope>
+        <sys_update_name>sys_ui_policy_action_b84e0bee47710210b5c0fe02d16d43d1</sys_update_name>
+        <sys_updated_by>joatan</sys_updated_by>
+        <sys_updated_on>2024-04-29 13:43:55</sys_updated_on>
+        <table>x_738256_inventory_product_request</table>
+        <ui_policy display_value="Make &quot;State&quot; field read-only">dc7dc7ae47710210b5c0fe02d16d43cb</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=b84e0bee47710210b5c0fe02d16d43d1"/>
+</record_update>

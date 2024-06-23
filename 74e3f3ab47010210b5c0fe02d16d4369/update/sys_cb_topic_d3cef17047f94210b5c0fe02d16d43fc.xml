@@ -122,7 +122,16 @@
             "mode": "simple"
           },
           "acknowledgeMsg": {
-            "value": "",
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Nice choice!"
+                  }
+                ]
+              }
+            ],
             "mode": "simple"
           },
           "applicability": {
@@ -266,9 +275,150 @@
             "mode": "glide_query",
             "value": ""
           }
+        },
+        "960f8105cc5b445aa8f32a7e96317a5f": {
+          "id": "960f8105cc5b445aa8f32a7e96317a5f",
+          "stepType": "TextOutput",
+          "name": "Done",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Your product request(s) was created! You will be attended soon! "
+                    },
+                    {
+                      "type": "emoji",
+                      "emoji": {
+                        "id": "smile",
+                        "name": "Smiling Face with Open Mouth and Smiling Eyes",
+                        "short_names": [
+                          "smile"
+                        ],
+                        "colons": ":smile:",
+                        "emoticons": [
+                          "C:",
+                          "c:",
+                          ":D",
+                          ":-D"
+                        ],
+                        "unified": "1f604",
+                        "skin": null,
+                        "native": "😄"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": " "
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "e0fd447839d14962b916cb6ba39a67fe"
+            }
+          ],
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "b0db81681aed4ba59e146a12217571a3": {
+          "id": "b0db81681aed4ba59e146a12217571a3",
+          "stepType": "BooleanPrompt",
+          "name": "New Product Request?",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Would you like to create a new product request?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "OK, sure."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "9acd2aa47e7c4646b635547b11f47f7d",
+          "detailDescription": ""
+        },
+        "27d3667981e34528aa9377be00787dfc": {
+          "id": "27d3667981e34528aa9377be00787dfc",
+          "stepType": "Decision",
+          "name": "Decision"
         }
       },
       "edges": [
+        {
+          "id": "65cd087003e04f42a5aa22d3dc525b89",
+          "edgeType": "Branch",
+          "source": "27d3667981e34528aa9377be00787dfc",
+          "target": "40281ede93614616b77634f77659a332",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.new_product_request_=true",
+            "mode": "query"
+          },
+          "label": "true"
+        },
+        {
+          "id": "d43ad881f76d4b0cb05a7d88b0925a59",
+          "edgeType": "Branch",
+          "source": "27d3667981e34528aa9377be00787dfc",
+          "target": "960f8105cc5b445aa8f32a7e96317a5f",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.new_product_request_=false",
+            "mode": "query"
+          },
+          "label": "false"
+        },
         {
           "id": "12aa4815428d45a99d482031cc92700e",
           "edgeType": "Edge",
@@ -302,10 +452,26 @@
           "targetPort": ""
         },
         {
+          "id": "079257ad6e4a4cd4a4621b1ad669aa82",
+          "edgeType": "Edge",
+          "source": "960f8105cc5b445aa8f32a7e96317a5f",
+          "target": "173618242818487fa5f1a32cb0e7f469",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
           "id": "921793b91c4846d2871814b4dea07c05",
           "edgeType": "Edge",
           "source": "275fc243d15f4a838b6a1a9e08680e52",
-          "target": "173618242818487fa5f1a32cb0e7f469",
+          "target": "b0db81681aed4ba59e146a12217571a3",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "ac67dcaf225240fe9578c3142ed71270",
+          "edgeType": "Edge",
+          "source": "b0db81681aed4ba59e146a12217571a3",
+          "target": "27d3667981e34528aa9377be00787dfc",
           "sourcePort": "",
           "targetPort": ""
         }
@@ -356,6 +522,16 @@
       "category": "vaInputs",
       "nodeId": "275fc243d15f4a838b6a1a9e08680e52",
       "isHidden": false
+    },
+    "9acd2aa47e7c4646b635547b11f47f7d": {
+      "id": "9acd2aa47e7c4646b635547b11f47f7d",
+      "name": "new_product_request_",
+      "label": "New Product Request?",
+      "varType": "boolean",
+      "secure": false,
+      "category": "vaInputs",
+      "nodeId": "b0db81681aed4ba59e146a12217571a3",
+      "isHidden": false
     }
   }
 }</graph>
@@ -380,14 +556,14 @@
         <sys_created_on>2024-04-23 21:27:01</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>d3cef17047f94210b5c0fe02d16d43fc</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>New Product Request</sys_name>
         <sys_package display_value="Inventory Management" source="x_738256_inventory">74e3f3ab47010210b5c0fe02d16d4369</sys_package>
         <sys_policy/>
         <sys_scope display_value="Inventory Management">74e3f3ab47010210b5c0fe02d16d4369</sys_scope>
         <sys_update_name>sys_cb_topic_d3cef17047f94210b5c0fe02d16d43fc</sys_update_name>
         <sys_updated_by>joatan</sys_updated_by>
-        <sys_updated_on>2024-04-23 21:41:31</sys_updated_on>
+        <sys_updated_on>2024-05-14 14:31:41</sys_updated_on>
         <triggerable_by_notification>false</triggerable_by_notification>
         <type>STANDARD</type>
     </sys_cb_topic>

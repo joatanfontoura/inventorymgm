@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
     <sys_cb_design_topic action="INSERT_OR_UPDATE">
         <compiled_topic display_value="New Product Request">7f214a7047f94210b5c0fe02d16d4333</compiled_topic>
-        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"551df7eaeb4e40029717e7fc4a63aa3a","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"551df7eaeb4e40029717e7fc4a63aa3a"}],"goals":[{"name":"primary","trigger_id":"551df7eaeb4e40029717e7fc4a63aa3a","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":""},"id":"3aa9488aa9d1469b9b15530a11866da1","name":"Start","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"173618242818487fa5f1a32cb0e7f469","name":"End","expert_mode":false},{"type":"InputPrompt","variable_id":"167f360eff1f44eca5846fbab4d43405","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Please, in a few words, say me what do you need.\", vaContext.getRequesterLang())"},"acknowledgement":{"type":"String","mode":"string","value":"gs.getMessageLang(\"OK, got it!\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"request_feedback":true,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"id":"40281ede93614616b77634f77659a332","name":"Short Description","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"formatType":"Text","validationScript":"","description":""},{"type":"ReferenceChoiceInputPrompt","mode":"glide_record","id":"86a08cf2d37a4e25966d7a4ad151d97f","name":"Product","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"variable_id":"f103904db91f4718956650126be2bf45","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"In the list bellow, select your product.\", vaContext.getRequesterLang())"},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"expression_mode":"simple","metadataScript":"","cardName":"","cardFields":[],"no_options_found_message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:d3cef17047f94210b5c0fe02d16d43fc:node:86a08cf2d37a4e25966d7a4ad151d97f:field:NoOptionsFoundMessage\", vaContext.getRequesterLang())"},"condition":{"type":"Condition","mode":"glide_query","value":"quantity&gt;0"},"description":""},{"type":"CRUDAction","mode":"create","query":"short_description={{vaInputs.short_description}}^product={{vaInputs.product}}","variable_id":"97dd592540854fe3855f4328f6d75998","id":"d4864de583254838960b08f1e10079af","name":"Create Product Request","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"attachments":[{"type":"String","mode":"string","value":""}]},{"type":"RecordOutputPrompt","mode":"variable","table":"x_738256_inventory_product_request","variable_id":"97dd592540854fe3855f4328f6d75998","fields":["short_description","product"],"request_feedback":true,"id":"275fc243d15f4a838b6a1a9e08680e52","name":"Product Request created","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"condition":{"type":"Condition","mode":"glide_query","value":""}}],"edges":[{"type":"Edge","source_node_id":"3aa9488aa9d1469b9b15530a11866da1","target_node_id":"40281ede93614616b77634f77659a332","id":"12aa4815428d45a99d482031cc92700e"},{"type":"Edge","source_node_id":"40281ede93614616b77634f77659a332","target_node_id":"86a08cf2d37a4e25966d7a4ad151d97f","id":"43719cf097ad4e21b1d50cd4f9757560"},{"type":"Edge","source_node_id":"86a08cf2d37a4e25966d7a4ad151d97f","target_node_id":"d4864de583254838960b08f1e10079af","id":"b518bc7575d9478dbe00b16ddb8280f7"},{"type":"Edge","source_node_id":"d4864de583254838960b08f1e10079af","target_node_id":"275fc243d15f4a838b6a1a9e08680e52","id":"8ad02953248242e695476b5f1e90ae00"},{"type":"Edge","source_node_id":"275fc243d15f4a838b6a1a9e08680e52","target_node_id":"173618242818487fa5f1a32cb0e7f469","id":"921793b91c4846d2871814b4dea07c05"}],"id":"primary"}],"script_variables":[],"glide_variables":[{"type":"Reference","table":"sys_user","id":"current-user","name":"user","formatType":"text","secure":false,"sensitive":false,"list":false},{"type":"String","name":"short_description","list":false,"id":"167f360eff1f44eca5846fbab4d43405","formatType":"Text","validationScript":"","secure":false,"sensitive":false},{"type":"Reference","table":"x_738256_inventory_product","reference_qualifier_condition":"quantity&gt;0","id":"f103904db91f4718956650126be2bf45","name":"product","formatType":"text","secure":false,"sensitive":false,"list":false},{"type":"Reference","table":"x_738256_inventory_product_request","id":"97dd592540854fe3855f4328f6d75998","name":"create_product_request","formatType":"text","secure":false,"sensitive":false,"list":false}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"74e3f3ab47010210b5c0fe02d16d4369","domain":"global","topic_type":"STANDARD","channels":[],"dialog_acts_enabled":false,"id":"d3cef17047f94210b5c0fe02d16d43fc","name":"New Product Request","key_phrases":["New Product Request"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"autopilot_topic":false,"design_categories":[],"triggerable_by_notification":false,"description":"Ask VA to open a new product request","model_type":"nlu_keyword","foundational":false,"modify_confirmation_enabled":false,"context_profiles":[],"library":false,"readOnly":false,"nluMapping":"[]"}</design_definition>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"f35f5e00abcd4df5b7d14f2bb48fb169","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"f35f5e00abcd4df5b7d14f2bb48fb169"}],"goals":[{"name":"primary","trigger_id":"f35f5e00abcd4df5b7d14f2bb48fb169","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":""},"id":"3aa9488aa9d1469b9b15530a11866da1","name":"Start","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"173618242818487fa5f1a32cb0e7f469","name":"End","expert_mode":false},{"type":"InputPrompt","variable_id":"167f360eff1f44eca5846fbab4d43405","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Please, in a few words, say me what happened.\", vaContext.getRequesterLang())"},"acknowledgement":{"type":"String","mode":"string","value":"gs.getMessageLang(\"OK, got it!\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"request_feedback":true,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"id":"40281ede93614616b77634f77659a332","name":"Short Description","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"formatType":"Text","validationScript":"","description":""},{"type":"ReferenceChoiceInputPrompt","mode":"glide_record","id":"86a08cf2d37a4e25966d7a4ad151d97f","name":"Product","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"variable_id":"f103904db91f4718956650126be2bf45","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"In the list bellow, select your product.\", vaContext.getRequesterLang())"},"acknowledgement":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Nice choice!\", vaContext.getRequesterLang())"},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"expression_mode":"simple","metadataScript":"","cardName":"","cardFields":[],"no_options_found_message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:d3cef17047f94210b5c0fe02d16d43fc:node:86a08cf2d37a4e25966d7a4ad151d97f:field:NoOptionsFoundMessage\", vaContext.getRequesterLang())"},"condition":{"type":"Condition","mode":"glide_query","value":"quantity&gt;0"},"description":""},{"type":"CRUDAction","mode":"create","query":"short_description={{vaInputs.short_description}}^product={{vaInputs.product}}","variable_id":"97dd592540854fe3855f4328f6d75998","id":"d4864de583254838960b08f1e10079af","name":"Create Product Request","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"attachments":[{"type":"String","mode":"string","value":""}]},{"type":"RecordOutputPrompt","mode":"variable","table":"x_738256_inventory_product_request","variable_id":"97dd592540854fe3855f4328f6d75998","fields":["short_description","product"],"request_feedback":true,"id":"275fc243d15f4a838b6a1a9e08680e52","name":"Product Request created","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"condition":{"type":"Condition","mode":"glide_query","value":""}},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:d3cef17047f94210b5c0fe02d16d43fc:node:960f8105cc5b445aa8f32a7e96317a5f:field:0\", vaContext.getRequesterLang())"}],"request_feedback":true,"id":"960f8105cc5b445aa8f32a7e96317a5f","name":"Done","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false},{"type":"InputPrompt","variable_id":"9acd2aa47e7c4646b635547b11f47f7d","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Would you like to create a new product request?\", vaContext.getRequesterLang())"},"acknowledgement":{"type":"String","mode":"string","value":"gs.getMessageLang(\"OK, sure.\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"id":"b0db81681aed4ba59e146a12217571a3","name":"New Product Request?","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"description":""},{"type":"Decision","name":"Decision","branches":[{"type":"Branch","label":"true","expression":{"type":"Applicability","mode":"query","value":"new_product_request_=true"},"id":"0607f0c2bb274bd0aaa5b5b3ba08f77f","name":"true","expert_mode":false},{"type":"Branch","label":"false","expression":{"type":"Applicability","mode":"query","value":"new_product_request_=false"},"id":"dd3c4714bc0c4328abf98467f448d826","name":"false","expert_mode":false}],"id":"27d3667981e34528aa9377be00787dfc","goal_id":"primary","expert_mode":false}],"edges":[{"type":"Edge","source_node_id":"27d3667981e34528aa9377be00787dfc","target_node_id":"40281ede93614616b77634f77659a332","branch_id":"0607f0c2bb274bd0aaa5b5b3ba08f77f","id":"65cd087003e04f42a5aa22d3dc525b89","name":"0607f0c2bb274bd0aaa5b5b3ba08f77f"},{"type":"Edge","source_node_id":"27d3667981e34528aa9377be00787dfc","target_node_id":"960f8105cc5b445aa8f32a7e96317a5f","branch_id":"dd3c4714bc0c4328abf98467f448d826","id":"d43ad881f76d4b0cb05a7d88b0925a59","name":"dd3c4714bc0c4328abf98467f448d826"},{"type":"Edge","source_node_id":"3aa9488aa9d1469b9b15530a11866da1","target_node_id":"40281ede93614616b77634f77659a332","id":"12aa4815428d45a99d482031cc92700e"},{"type":"Edge","source_node_id":"40281ede93614616b77634f77659a332","target_node_id":"86a08cf2d37a4e25966d7a4ad151d97f","id":"43719cf097ad4e21b1d50cd4f9757560"},{"type":"Edge","source_node_id":"86a08cf2d37a4e25966d7a4ad151d97f","target_node_id":"d4864de583254838960b08f1e10079af","id":"b518bc7575d9478dbe00b16ddb8280f7"},{"type":"Edge","source_node_id":"d4864de583254838960b08f1e10079af","target_node_id":"275fc243d15f4a838b6a1a9e08680e52","id":"8ad02953248242e695476b5f1e90ae00"},{"type":"Edge","source_node_id":"960f8105cc5b445aa8f32a7e96317a5f","target_node_id":"173618242818487fa5f1a32cb0e7f469","id":"079257ad6e4a4cd4a4621b1ad669aa82"},{"type":"Edge","source_node_id":"275fc243d15f4a838b6a1a9e08680e52","target_node_id":"b0db81681aed4ba59e146a12217571a3","id":"921793b91c4846d2871814b4dea07c05"},{"type":"Edge","source_node_id":"b0db81681aed4ba59e146a12217571a3","target_node_id":"27d3667981e34528aa9377be00787dfc","id":"ac67dcaf225240fe9578c3142ed71270"}],"id":"primary"}],"script_variables":[],"glide_variables":[{"type":"Reference","table":"sys_user","id":"current-user","name":"user","formatType":"text","secure":false,"sensitive":false,"list":false},{"type":"String","name":"short_description","list":false,"id":"167f360eff1f44eca5846fbab4d43405","formatType":"Text","validationScript":"","secure":false,"sensitive":false},{"type":"Reference","table":"x_738256_inventory_product","reference_qualifier_condition":"quantity&gt;0","id":"f103904db91f4718956650126be2bf45","name":"product","formatType":"text","secure":false,"sensitive":false,"list":false},{"type":"Reference","table":"x_738256_inventory_product_request","id":"97dd592540854fe3855f4328f6d75998","name":"create_product_request","formatType":"text","secure":false,"sensitive":false,"list":false},{"type":"True/False","id":"9acd2aa47e7c4646b635547b11f47f7d","name":"new_product_request_","formatType":"text","secure":false,"sensitive":false,"list":false}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"74e3f3ab47010210b5c0fe02d16d4369","domain":"global","topic_type":"STANDARD","channels":[],"dialog_acts_enabled":false,"id":"d3cef17047f94210b5c0fe02d16d43fc","name":"New Product Request","key_phrases":["New Product Request"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"autopilot_topic":false,"design_categories":[],"triggerable_by_notification":false,"description":"Ask VA to open a new product request","model_type":"nlu_keyword","foundational":false,"modify_confirmation_enabled":false,"context_profiles":[],"library":false,"csTopicId":"7f214a7047f94210b5c0fe02d16d4333","readOnly":false,"nluMapping":"[]"}</design_definition>
         <design_topic_id>d3cef17047f94210b5c0fe02d16d43fc</design_topic_id>
         <graph>{
   "graph_api_version": "1.0.61",
@@ -43,7 +43,7 @@
                 "type": "paragraph",
                 "children": [
                   {
-                    "text": "Please, in a few words, say me what do you need."
+                    "text": "Please, in a few words, say me what happened."
                   }
                 ]
               }
@@ -113,7 +113,16 @@
             "mode": "simple"
           },
           "acknowledgeMsg": {
-            "value": "",
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Nice choice!"
+                  }
+                ]
+              }
+            ],
             "mode": "simple"
           },
           "applicability": {
@@ -257,9 +266,150 @@
             "mode": "glide_query",
             "value": ""
           }
+        },
+        "960f8105cc5b445aa8f32a7e96317a5f": {
+          "id": "960f8105cc5b445aa8f32a7e96317a5f",
+          "stepType": "TextOutput",
+          "name": "Done",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Your product request(s) was created! You will be attended soon! "
+                    },
+                    {
+                      "type": "emoji",
+                      "emoji": {
+                        "id": "smile",
+                        "name": "Smiling Face with Open Mouth and Smiling Eyes",
+                        "short_names": [
+                          "smile"
+                        ],
+                        "colons": ":smile:",
+                        "emoticons": [
+                          "C:",
+                          "c:",
+                          ":D",
+                          ":-D"
+                        ],
+                        "unified": "1f604",
+                        "skin": null,
+                        "native": "😄"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": " "
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "e0fd447839d14962b916cb6ba39a67fe"
+            }
+          ],
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "b0db81681aed4ba59e146a12217571a3": {
+          "id": "b0db81681aed4ba59e146a12217571a3",
+          "stepType": "BooleanPrompt",
+          "name": "New Product Request?",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Would you like to create a new product request?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "OK, sure."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "9acd2aa47e7c4646b635547b11f47f7d",
+          "detailDescription": ""
+        },
+        "27d3667981e34528aa9377be00787dfc": {
+          "id": "27d3667981e34528aa9377be00787dfc",
+          "stepType": "Decision",
+          "name": "Decision"
         }
       },
       "edges": [
+        {
+          "id": "65cd087003e04f42a5aa22d3dc525b89",
+          "edgeType": "Branch",
+          "source": "27d3667981e34528aa9377be00787dfc",
+          "target": "40281ede93614616b77634f77659a332",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.new_product_request_=true",
+            "mode": "query"
+          },
+          "label": "true"
+        },
+        {
+          "id": "d43ad881f76d4b0cb05a7d88b0925a59",
+          "edgeType": "Branch",
+          "source": "27d3667981e34528aa9377be00787dfc",
+          "target": "960f8105cc5b445aa8f32a7e96317a5f",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.new_product_request_=false",
+            "mode": "query"
+          },
+          "label": "false"
+        },
         {
           "id": "12aa4815428d45a99d482031cc92700e",
           "edgeType": "Edge",
@@ -293,10 +443,26 @@
           "targetPort": ""
         },
         {
+          "id": "079257ad6e4a4cd4a4621b1ad669aa82",
+          "edgeType": "Edge",
+          "source": "960f8105cc5b445aa8f32a7e96317a5f",
+          "target": "173618242818487fa5f1a32cb0e7f469",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
           "id": "921793b91c4846d2871814b4dea07c05",
           "edgeType": "Edge",
           "source": "275fc243d15f4a838b6a1a9e08680e52",
-          "target": "173618242818487fa5f1a32cb0e7f469",
+          "target": "b0db81681aed4ba59e146a12217571a3",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "ac67dcaf225240fe9578c3142ed71270",
+          "edgeType": "Edge",
+          "source": "b0db81681aed4ba59e146a12217571a3",
+          "target": "27d3667981e34528aa9377be00787dfc",
           "sourcePort": "",
           "targetPort": ""
         }
@@ -347,6 +513,16 @@
       "category": "vaInputs",
       "nodeId": "275fc243d15f4a838b6a1a9e08680e52",
       "isHidden": false
+    },
+    "9acd2aa47e7c4646b635547b11f47f7d": {
+      "id": "9acd2aa47e7c4646b635547b11f47f7d",
+      "name": "new_product_request_",
+      "label": "New Product Request?",
+      "varType": "boolean",
+      "secure": false,
+      "category": "vaInputs",
+      "nodeId": "b0db81681aed4ba59e146a12217571a3",
+      "isHidden": false
     }
   }
 }</graph>
@@ -356,14 +532,14 @@
         <sys_created_on>2024-04-23 21:37:25</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>7b21027447f94210b5c0fe02d16d4381</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>FlowTopic</sys_name>
         <sys_package display_value="Inventory Management" source="x_738256_inventory">74e3f3ab47010210b5c0fe02d16d4369</sys_package>
         <sys_policy/>
         <sys_scope display_value="Inventory Management">74e3f3ab47010210b5c0fe02d16d4369</sys_scope>
         <sys_update_name>sys_cb_design_topic_7b21027447f94210b5c0fe02d16d4381</sys_update_name>
         <sys_updated_by>joatan</sys_updated_by>
-        <sys_updated_on>2024-04-23 21:37:25</sys_updated_on>
+        <sys_updated_on>2024-05-14 14:31:42</sys_updated_on>
         <type>FlowTopic</type>
     </sys_cb_design_topic>
 </record_update>
